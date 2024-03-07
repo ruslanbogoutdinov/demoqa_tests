@@ -16,7 +16,7 @@ public class FormPracticeWithComments {
         Configuration.baseUrl = "https://demoqa.com";
     }
     @Test
-    public void practiceFormTest(){
+    void practiceFormTest(){
         open("/automation-practice-form");
         $(".practice-form-wrapper").shouldHave(text("Student Registration Form"));
 
