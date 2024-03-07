@@ -29,7 +29,7 @@ public class FormPractice {
         $(".react-datepicker__day--030:not(.react-datepicker__day--outside-month)").click();
         $("#subjectsInput").setValue("Math").pressEnter();
         $("#hobbiesWrapper").$(byText("Sports")).click();
-        $("#uploadPicture").uploadFromClasspath("img/1.png"); // работает только для type=file
+        $("#uploadPicture").uploadFromClasspath("img/1.png");
         $("#currentAddress").setValue("Some address");
         $("#state").click();
         $("#stateCity-wrapper").$(byText("NCR")).click();
