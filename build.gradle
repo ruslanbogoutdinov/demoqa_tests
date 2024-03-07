@@ -14,5 +14,8 @@ dependencies {
 }
 
 test{
+    // Указываем дефолтный язык для сайта
+    systemProperty "chromeoptions.prefs", "init.accept.languages=en"
+
     useJUnitPlatform()
 }
