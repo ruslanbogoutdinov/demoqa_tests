@@ -1,0 +1,10 @@
+Breakpoint in browser:
+
+1) Hotkeys
+fn + F8
+
+2) type in console:
+setInterval(function () {debugger}, 4000)
+
+
+
