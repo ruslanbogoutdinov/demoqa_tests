@@ -1,8 +1,7 @@
 import static com.codeborne.selenide.Selectors.*;
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.$x;
+import static com.codeborne.selenide.Selenide.*;
 
-public class CssXpathExamples {
+public class CssPathExamples {
     void cssXpathExamples(){
         // Самый лучший способ добраться до элемента, это по параметру "data-testid", который разработчик должен
         // добавлять в элементы. Данный параметр предназначен для автотестировщиков
@@ -65,6 +64,17 @@ public class CssXpathExamples {
         // Также можно найти тест по соответствию
         $(withText("llo, QA gu")).click();
 
+        // Поиск по 'placeholder'
+        $("[placeholder=Search or jump to...]").setValue("selenide");
 
+        // Поиск нужного item(li) в списке ul
+        $$("ul.some-list li").first().$("a").click();
+        // OR
+        $$("ul.some-list li").get(0).$("a").click();
+
+        // Поиск нужного item(div) в списке div
+        $$("[data-testid=results-list] > div").first().$("a").click();
+        // OR
+        $$("[data-testid=results-list] > div").get(1).$("a").click();
     }
 }
