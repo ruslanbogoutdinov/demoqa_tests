@@ -26,7 +26,6 @@ public class DOMLesson {
         // Поиск сиблинга в обратном порядке
         $("#someElement").preceding(0);
 
-
         // CSS Selectors
         // div div - любой первый потомок дива
         // div>div - первый прямой потомок дива

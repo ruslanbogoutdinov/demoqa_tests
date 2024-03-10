@@ -51,7 +51,7 @@ public class CssPathExamples {
         //      <input type="email" class="login_form_input_box">
         // </div>
 
-        $(".inputtext").$("login_form_input_box").setValue("1");
+        $(".inputtext").$(".login_form_input_box").setValue("1");
         // OR
         $(".inputtext .login_form_input_box").setValue("1");
 
