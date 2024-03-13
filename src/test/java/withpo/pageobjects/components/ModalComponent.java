@@ -1,6 +1,4 @@
-package withpo.components;
-
-import withpo.pageobjects.FormPracticePO;
+package withpo.pageobjects.components;
 
 import static com.codeborne.selenide.Condition.appear;
 import static com.codeborne.selenide.Condition.text;

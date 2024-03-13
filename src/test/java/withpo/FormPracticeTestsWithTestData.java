@@ -2,9 +2,8 @@ package withpo;
 
 import org.junit.jupiter.api.Test;
 
-public class FormPracticeTestClass extends TestBase {
-    private static final String
-        firstName = "Ruslan",
+public class FormPracticeTestsWithTestData extends TestBase {
+    String firstName = "Ruslan",
         lastName = "Bogoutdinov",
         userEmail = "ruslanbogoutdinov@gmail.com",
         userGender = "Male",

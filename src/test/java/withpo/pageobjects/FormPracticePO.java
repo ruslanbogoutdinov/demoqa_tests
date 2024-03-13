@@ -1,9 +1,9 @@
 package withpo.pageobjects;
 
 import com.codeborne.selenide.SelenideElement;
-import withpo.components.CalendarComponent;
-import withpo.components.ModalComponent;
-import withpo.components.UploadFileComponent;
+import withpo.pageobjects.components.CalendarComponent;
+import withpo.pageobjects.components.ModalComponent;
+import withpo.pageobjects.components.UploadFileComponent;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;

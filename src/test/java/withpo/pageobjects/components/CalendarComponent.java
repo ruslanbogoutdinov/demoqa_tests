@@ -1,4 +1,4 @@
-package withpo.components;
+package withpo.pageobjects.components;
 
 import static com.codeborne.selenide.Selenide.$;
 
