@@ -1,3 +1,6 @@
+package examples;
+
+import static com.codeborne.selenide.Condition.attribute;
 import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
 
@@ -76,5 +79,17 @@ public class CssPathExamples {
         $$("[data-testid=results-list] > div").first().$("a").click();
         // OR
         $$("[data-testid=results-list] > div").get(1).$("a").click();
+
+        // Ищем по тегу и тексту одновременное
+        $(byTagAndText("strong", "Close")).click();
+
+        // Проверяем что у элемента есть некоторый аттрибут
+        $("#element").shouldHave(attribute("attributeName"));
+
+        // Кликнуть по элементу, аттрибут которого начинается с определенного слова
+        $("[name^=order]").click();
+
+        // Кликнуть по элементу, аттрибут которого заканчивается определенным словом
+        $("[name$=order]").click();
     }
 }

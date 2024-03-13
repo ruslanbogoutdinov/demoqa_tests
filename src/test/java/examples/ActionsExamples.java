@@ -1,3 +1,5 @@
+package examples;
+
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 

@@ -1,9 +1,11 @@
+package examples;
+
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.$;
 
-public class OtherMethods {
+public class WorkWithText {
     @Test
     void otherMethodsTest(){
         // Ищем по частичному совпадению, игнорируя кейс

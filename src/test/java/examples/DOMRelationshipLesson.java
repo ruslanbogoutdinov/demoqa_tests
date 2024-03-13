@@ -1,19 +1,11 @@
-import com.codeborne.selenide.Configuration;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
+package examples;
 
 import static com.codeborne.selenide.Selenide.*;
 
-public class DOMLesson {
-    @BeforeAll
-    static void beforeAll(){
-        Configuration.browserSize = "1920x1080";
-    }
-    @Test
+public class DOMRelationshipLesson {
     void DOMLessonTest(){
         //open("https://www.google.com/");
         open("https://my.click.uz/");
-        sleep(8000);
 
         // Поиск родителя у элемента
         $("#someElement").parent();
